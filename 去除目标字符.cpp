@@ -16,9 +16,12 @@ int remove_target_char(char* str, char target_c) {
 
 	str[index] = '\0';
 	//释放多余内存空间；
+	char* q = NULL;
 	for (int j = index + 1; j < len; j++) {
-		delete (str + j);
+		q = str + j;
+		delete q;
 	}
+	q = NULL;
 
 	return 0;
 }
