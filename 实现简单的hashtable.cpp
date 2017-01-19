@@ -8,7 +8,7 @@ public:
 	const string& GetVal() {
 		return val;
 	}
-	void SetVal(string ) {
+	void SetVal(string v) {
 		val = v;
 	}
 
